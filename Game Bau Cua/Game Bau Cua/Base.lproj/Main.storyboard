@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Game_Bau_Cua" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="com.boyaa.hallgame3h_vtn" translatesAutoresizingMaskIntoConstraints="NO" id="YVi-kT-4WS">
+                                <rect key="frame" x="298" y="57" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Mẹo-chơi-Bầu-Cua-Tôm-Cá-dễ-thắng-nhất" translatesAutoresizingMaskIntoConstraints="NO" id="ePK-VT-d20" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bau" translatesAutoresizingMaskIntoConstraints="NO" id="zyR-DO-hEO">
+                                <rect key="frame" x="129" y="143" width="130" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bau" translatesAutoresizingMaskIntoConstraints="NO" id="0CC-1g-lcQ">
+                                <rect key="frame" x="383" y="143" width="130" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bau" translatesAutoresizingMaskIntoConstraints="NO" id="h9S-4w-2fm">
+                                <rect key="frame" x="649" y="143" width="130" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Background" destination="ePK-VT-d20" id="8ha-H8-NXA"/>
+                        <outlet property="Logo" destination="YVi-kT-4WS" id="kZL-SA-7Wj"/>
+                        <outlet property="XucXac1" destination="zyR-DO-hEO" id="FfP-kJ-kjl"/>
+                        <outlet property="XucXac2" destination="0CC-1g-lcQ" id="giO-c8-JQo"/>
+                        <outlet property="XucXac3" destination="h9S-4w-2fm" id="HfY-2n-zr3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233.03571428571428" y="11.594202898550726"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mẹo-chơi-Bầu-Cua-Tôm-Cá-dễ-thắng-nhất" width="421" height="292"/>
+        <image name="bau" width="130" height="129"/>
+        <image name="com.boyaa.hallgame3h_vtn" width="300" height="300"/>
+    </resources>
+</document>

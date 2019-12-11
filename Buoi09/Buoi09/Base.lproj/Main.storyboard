@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Buoi09" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAI-dR-FCN" userLabel="ViewDO">
+                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="375"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQP-Z3-en5" userLabel="ViewVANG">
+                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="375"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z50-eZ-jIc" userLabel="ViewXANH">
+                                <rect key="frame" x="597.5" y="0.0" width="298.5" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VAI-dR-FCN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" id="HWT-H7-5vv"/>
+                            <constraint firstAttribute="bottom" secondItem="PQP-Z3-en5" secondAttribute="bottom" id="HkN-zb-iqT"/>
+                            <constraint firstItem="VAI-dR-FCN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PC9-iW-Yiy"/>
+                            <constraint firstItem="PQP-Z3-en5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PJp-1j-Mhi"/>
+                            <constraint firstItem="PQP-Z3-en5" firstAttribute="leading" secondItem="VAI-dR-FCN" secondAttribute="trailing" id="SWG-oX-x5I"/>
+                            <constraint firstItem="PQP-Z3-en5" firstAttribute="width" secondItem="VAI-dR-FCN" secondAttribute="width" id="ZzV-2S-827"/>
+                            <constraint firstItem="Z50-eZ-jIc" firstAttribute="leading" secondItem="PQP-Z3-en5" secondAttribute="trailing" id="fJ6-BU-Asg"/>
+                            <constraint firstAttribute="bottom" secondItem="VAI-dR-FCN" secondAttribute="bottom" id="kid-6M-qh8"/>
+                            <constraint firstAttribute="trailing" secondItem="Z50-eZ-jIc" secondAttribute="trailing" id="kmx-51-FRh"/>
+                            <constraint firstAttribute="trailing" secondItem="PQP-Z3-en5" secondAttribute="trailing" id="kqa-71-wIa"/>
+                            <constraint firstItem="Z50-eZ-jIc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qy0-t1-7Tw"/>
+                            <constraint firstItem="VAI-dR-FCN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uyr-zR-tMu"/>
+                            <constraint firstItem="VAI-dR-FCN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="vgu-sr-xvH"/>
+                            <constraint firstAttribute="bottom" secondItem="Z50-eZ-jIc" secondAttribute="bottom" id="x8v-VZ-ioS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Z50-eZ-jIc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="HWT-H7-5vv"/>
+                                <exclude reference="vgu-sr-xvH"/>
+                                <exclude reference="kqa-71-wIa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Z50-eZ-jIc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="vgu-sr-xvH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="HWT-H7-5vv"/>
+                                <include reference="kqa-71-wIa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>

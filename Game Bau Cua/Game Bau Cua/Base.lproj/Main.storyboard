@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="com.boyaa.hallgame3h_vtn" translatesAutoresizingMaskIntoConstraints="NO" id="YVi-kT-4WS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="com.boyaa.hallgame3h_vtn" translatesAutoresizingMaskIntoConstraints="NO" id="YVi-kT-4WS">
                                 <rect key="frame" x="298" y="57" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>

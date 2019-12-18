@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //
-        UIView.animate(withDuration: 2, animations: {
+        
+        UIView.animate(withDuration: 3, animations: {
             self.view.backgroundColor = .white
             self.Logo.alpha = 0
         }) { (step2) in

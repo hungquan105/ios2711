@@ -36,9 +36,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1 :
             let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
+            // gan gia tri closrure
+            
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
+            
             return cell
         }
         

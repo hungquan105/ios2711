@@ -9,6 +9,8 @@
 import UIKit
 
 class ProductCell: UITableViewCell {
+    
+    // collectionView
 
     override func awakeFromNib() {
         super.awakeFromNib()

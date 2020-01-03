@@ -10,6 +10,8 @@ import UIKit
 
 class CategoryCell: UITableViewCell {
 
+    // collectionView
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,3 +24,9 @@ class CategoryCell: UITableViewCell {
     }
 
 }
+
+// extension
+
+// didSelectItemAt
+
+// closure

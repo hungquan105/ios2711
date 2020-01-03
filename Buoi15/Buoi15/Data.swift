@@ -12,3 +12,6 @@ import UIKit
 var arrProduct:[String] = [
     
 ]
+
+//var TheThao:[TheThao] = []
+//var ThoiTrang:[ThoiTrang] = []

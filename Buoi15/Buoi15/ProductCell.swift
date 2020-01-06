@@ -11,7 +11,10 @@ import UIKit
 class ProductCell: UITableViewCell {
     
     // collectionView
-
+    
+    //
+    var didChangeScreen:((_ id:String)->Void)! = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +25,30 @@ class ProductCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
+}
+
+extension ProductCell: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return arrProduct.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductItemCell", for: indexPath) as! ProductItemCell
+        cell.img.image = arrProduct[indexPath.item].image
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(arrProduct[indexPath.item].id)
+  
+        if self.didChangeScreen != nil {
+            self.didChangeScreen(arrProduct[indexPath.item].id)
+        }
+         
+    }
+    
+    
 
 }

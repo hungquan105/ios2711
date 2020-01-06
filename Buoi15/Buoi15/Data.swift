@@ -9,8 +9,17 @@
 import Foundation
 import UIKit
 
-var arrProduct:[String] = [
-    
+struct Product {
+    let id: String
+    let name: String
+    let image: UIImage
+    let quantity: Int
+}
+
+var arrProduct:[Product] = [
+    Product(id: "1", name: "iPhone 8", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
+    Product(id: "4", name: "iPhone X", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
+    Product(id: "9", name: "iPhone 11", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
 ]
 
 //var TheThao:[TheThao] = []

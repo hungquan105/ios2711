@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143E632D23C365490038BD2C /* ProductItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E632C23C365490038BD2C /* ProductItemCell.swift */; };
+		143E632F23C36AA50038BD2C /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E632E23C36AA50038BD2C /* ProductDetailViewController.swift */; };
+		143E633123C375270038BD2C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E633023C375270038BD2C /* ImageCollectionViewCell.swift */; };
+		143E633323C376F70038BD2C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E633223C376F70038BD2C /* ImageCell.swift */; };
+		143E633523C377BE0038BD2C /* QuantityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E633423C377BE0038BD2C /* QuantityCell.swift */; };
 		14DC34BF23BF6E2F00D5FEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC34BE23BF6E2F00D5FEB2 /* AppDelegate.swift */; };
 		14DC34C123BF6E2F00D5FEB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC34C023BF6E2F00D5FEB2 /* SceneDelegate.swift */; };
 		14DC34C323BF6E2F00D5FEB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC34C223BF6E2F00D5FEB2 /* ViewController.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		143E632C23C365490038BD2C /* ProductItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemCell.swift; sourceTree = "<group>"; };
+		143E632E23C36AA50038BD2C /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		143E633023C375270038BD2C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		143E633223C376F70038BD2C /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		143E633423C377BE0038BD2C /* QuantityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityCell.swift; sourceTree = "<group>"; };
 		14DC34BB23BF6E2F00D5FEB2 /* Buoi15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buoi15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DC34BE23BF6E2F00D5FEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14DC34C023BF6E2F00D5FEB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,14 +79,19 @@
 				14DC34BE23BF6E2F00D5FEB2 /* AppDelegate.swift */,
 				14DC34C023BF6E2F00D5FEB2 /* SceneDelegate.swift */,
 				14DC34C423BF6E2F00D5FEB2 /* Main.storyboard */,
+				143E633223C376F70038BD2C /* ImageCell.swift */,
+				143E633023C375270038BD2C /* ImageCollectionViewCell.swift */,
 				14DC34C723BF6E3000D5FEB2 /* Assets.xcassets */,
 				14DC34C923BF6E3000D5FEB2 /* LaunchScreen.storyboard */,
 				14DC34CC23BF6E3000D5FEB2 /* Info.plist */,
 				14DC34C223BF6E2F00D5FEB2 /* ViewController.swift */,
 				14DC34D223BF700100D5FEB2 /* bannerCell.swift */,
+				14DC34D823BF704A00D5FEB2 /* bannerItemCell.swift */,
 				14DC34D423BF701900D5FEB2 /* CategoryCell.swift */,
 				14DC34D623BF702B00D5FEB2 /* ProductCell.swift */,
-				14DC34D823BF704A00D5FEB2 /* bannerItemCell.swift */,
+				143E632E23C36AA50038BD2C /* ProductDetailViewController.swift */,
+				143E633423C377BE0038BD2C /* QuantityCell.swift */,
+				143E632C23C365490038BD2C /* ProductItemCell.swift */,
 				14DC34DA23BF7F0600D5FEB2 /* Data.swift */,
 			);
 			path = Buoi15;
@@ -154,13 +169,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DC34C323BF6E2F00D5FEB2 /* ViewController.swift in Sources */,
+				143E633123C375270038BD2C /* ImageCollectionViewCell.swift in Sources */,
 				14DC34D323BF700100D5FEB2 /* bannerCell.swift in Sources */,
 				14DC34BF23BF6E2F00D5FEB2 /* AppDelegate.swift in Sources */,
 				14DC34D923BF704A00D5FEB2 /* bannerItemCell.swift in Sources */,
+				143E633323C376F70038BD2C /* ImageCell.swift in Sources */,
 				14DC34D723BF702B00D5FEB2 /* ProductCell.swift in Sources */,
 				14DC34C123BF6E2F00D5FEB2 /* SceneDelegate.swift in Sources */,
+				143E632D23C365490038BD2C /* ProductItemCell.swift in Sources */,
+				143E632F23C36AA50038BD2C /* ProductDetailViewController.swift in Sources */,
 				14DC34D523BF701900D5FEB2 /* CategoryCell.swift in Sources */,
 				14DC34DB23BF7F0600D5FEB2 /* Data.swift in Sources */,
+				143E633523C377BE0038BD2C /* QuantityCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

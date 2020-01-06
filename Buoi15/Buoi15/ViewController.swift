@@ -42,6 +42,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductCell
             
+            cell.didChangeScreen = { (id) in
+                let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ProductDetailViewController") as? ProductDetailViewController
+                vc!.id = id
+                self.navigationController!.pushViewController(vc!, animated: true)
+                
+            }
             return cell
         }
         

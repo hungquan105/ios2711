@@ -13,6 +13,7 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var id:String?
     var product: Product?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         product = arrProduct.filter{ $0.id == id }.first
@@ -21,16 +22,21 @@ class ProductDetailViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+    
+    @IBAction func addToCart(_ sender: Any) {
+        // kiem tra trung san pham -> sua so luong
+        // kiem tra nhieu san pham -> duyet mang for or fillter
+//        if () {
+//
+//        }
+        
+       Cart.append(product!)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let Cartvc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CartViewController") as? CartViewController
+         
+        self.navigationController!.pushViewController(Cartvc!, animated: true)
     }
-    */
-
+    
 }
 
 extension ProductDetailViewController : UITableViewDelegate,UITableViewDataSource{
@@ -48,10 +54,15 @@ extension ProductDetailViewController : UITableViewDelegate,UITableViewDataSourc
         switch indexPath.section {
         case 0:
             let Cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell") as! ImageCell
-            Cell.bindData(product: product!)
+            
             return Cell
         default:
             let Cell = tableView.dequeueReusableCell(withIdentifier: "QuantityCell") as! QuantityCell
+            Cell.lbQuantity.text = "\(product?.quantity ?? 2)"
+            Cell.didChangeQuantity = { (sl) in
+                self.product?.quantity = sl
+                self.tableView.reloadData()
+            }
             return Cell
             
         }

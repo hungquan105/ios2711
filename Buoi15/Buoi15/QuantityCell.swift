@@ -10,6 +10,9 @@ import UIKit
 
 class QuantityCell: UITableViewCell {
 
+    @IBOutlet weak var lbQuantity: UILabel!
+    var didChangeQuantity:((_ sl:Int) -> Void)! = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +23,22 @@ class QuantityCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    @IBAction func clickAdd(_ sender: UIButton) {
+        var sl:Int = Int(lbQuantity.text!)!
+        sl += 1
+        if didChangeQuantity != nil {
+            didChangeQuantity(sl)
+        }
+    }
+    @IBAction func clickNegative(_ sender: Any) {
+        var sl:Int = Int(lbQuantity.text!)!
+        sl -= 1
+        if sl > 0{
+            if didChangeQuantity != nil {
+                       didChangeQuantity(sl)
+                   }
+        }
+       
+    }
+    
 }

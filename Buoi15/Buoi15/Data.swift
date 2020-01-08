@@ -13,7 +13,7 @@ struct Product {
     let id: String
     let name: String
     let image: UIImage
-    let quantity: Int
+    var quantity: Int
 }
 
 var arrProduct:[Product] = [
@@ -24,3 +24,4 @@ var arrProduct:[Product] = [
 
 //var TheThao:[TheThao] = []
 //var ThoiTrang:[ThoiTrang] = []
+var Cart:[Product] = []

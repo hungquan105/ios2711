@@ -1,15 +1,18 @@
 //
-//  ImageCell.swift
+//  ProductInCartCell.swift
 //  Buoi15
 //
-//  Created by Quân on 1/6/20.
+//  Created by Quân on 1/8/20.
 //  Copyright © 2020 QuanNguyen. All rights reserved.
 //
 
 import UIKit
 
-class ImageCell: UITableViewCell {
+class ProductInCartCell: UITableViewCell {
 
+    @IBOutlet weak var ProductListView: UIView!
+    @IBOutlet weak var NonProductView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

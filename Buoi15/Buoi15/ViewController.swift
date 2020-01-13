@@ -14,7 +14,26 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        do {
+            // url
+            let url:URL = Bundle.main.url(forResource: "Data", withExtension: "json")!
+            // data
+            let data:Data = try Data(contentsOf: url)
+            let str:String = String(data: data, encoding: .utf8)!
+//            print(str)
+            // do vao mang
+            do {
+                let json = try JSONDecoder.init().decode([Product].self, from: data)
+//                print(json)
+                arrProduct = json
+                print(arrProduct[1].name)
+            } catch {
+                print("json error")
+            }
+        } catch {
+            print("data error")
+        }
         
     }
 

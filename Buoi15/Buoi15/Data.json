@@ -1,0 +1,36 @@
+[
+    {
+        "id":"1",
+        "name":"iPhone 8",
+        "image":"imageName1",
+        "quantity":1,
+        "thongso":{
+            "camera":"20Mp",
+            "ram":"2GB",
+            "rom":"32GB"
+        }
+    },
+    {
+        "id":"3",
+        "name":"iPhone X",
+        "image":"imageName2",
+        "quantity":1,
+        "thongso":{
+            "camera":"25Mp",
+            "ram":"3GB",
+            "rom":"32GB"
+        }
+    },
+    {
+        "id":"7",
+        "name":"iPhone 11",
+        "image":"imageName3",
+        "quantity":1,
+        "thongso":{
+            "camera":"30Mp",
+            "ram":"4GB",
+            "rom":"64GB"
+        }
+    }
+]
+

@@ -36,7 +36,7 @@ extension ProductCell: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductItemCell", for: indexPath) as! ProductItemCell
-        cell.img.image = arrProduct[indexPath.item].image
+//        cell.img.image = arrProduct[indexPath.item].image
         return cell
     }
     

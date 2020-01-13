@@ -9,18 +9,30 @@
 import Foundation
 import UIKit
 
-struct Product {
-    let id: String
-    let name: String
-    let image: UIImage
-    var quantity: Int
+public struct Product:Codable {
+
+        public var id : String
+        public var image : String
+        public var name : String
+        public var quantity : Int
+        public var thongso : Thongso
+        
 }
 
-var arrProduct:[Product] = [
-    Product(id: "1", name: "iPhone 8", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
-    Product(id: "4", name: "iPhone X", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
-    Product(id: "9", name: "iPhone 11", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
-]
+public struct Thongso:Codable {
+
+        public var camera : String
+        public var ram : String
+        public var rom : String
+        
+}
+
+var arrProduct:[Product] = []
+//= [
+//    Product(id: "1", name: "iPhone 8", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
+//    Product(id: "4", name: "iPhone X", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
+//    Product(id: "9", name: "iPhone 11", image: #imageLiteral(resourceName: "apple-iphone-11-1564393153"), quantity: 1),
+//]
 
 //var TheThao:[TheThao] = []
 //var ThoiTrang:[ThoiTrang] = []

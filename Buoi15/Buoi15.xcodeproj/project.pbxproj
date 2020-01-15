@@ -96,12 +96,12 @@
 				143E633423C377BE0038BD2C /* QuantityCell.swift */,
 				1475584323C60CB6004EBFCD /* CartViewController.swift */,
 				14DC34DA23BF7F0600D5FEB2 /* Data.swift */,
+				14B0904623CC9F82002D3315 /* Data.json */,
 				14DC34C723BF6E3000D5FEB2 /* Assets.xcassets */,
 				14DC34BE23BF6E2F00D5FEB2 /* AppDelegate.swift */,
 				14DC34C023BF6E2F00D5FEB2 /* SceneDelegate.swift */,
 				14DC34C923BF6E3000D5FEB2 /* LaunchScreen.storyboard */,
 				14DC34CC23BF6E3000D5FEB2 /* Info.plist */,
-				14B0904623CC9F82002D3315 /* Data.json */,
 			);
 			path = Buoi15;
 			sourceTree = "<group>";

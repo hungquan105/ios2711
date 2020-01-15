@@ -21,12 +21,12 @@ class ViewController: UIViewController {
             // data
             let data:Data = try Data(contentsOf: url)
             let str:String = String(data: data, encoding: .utf8)!
-//            print(str)
+            print(str)
             // do vao mang
             do {
-                let json = try JSONDecoder.init().decode([Product].self, from: data)
+                let json = try JSONDecoder.init().decode(Root.self, from: data)
 //                print(json)
-                arrProduct = json
+                arrProduct = json.product
                 print(arrProduct[1].name)
             } catch {
                 print("json error")

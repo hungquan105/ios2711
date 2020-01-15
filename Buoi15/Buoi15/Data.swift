@@ -9,6 +9,16 @@
 import Foundation
 import UIKit
 
+struct Root:Codable {
+    var category:[Category]
+    var product:[Product]
+}
+
+struct Category:Codable {
+    var id:String
+    var name:String
+}
+
 public struct Product:Codable {
 
         public var id : String

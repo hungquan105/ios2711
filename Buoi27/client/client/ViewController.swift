@@ -92,26 +92,26 @@ class ViewController: UIViewController {
 //        }
 //        task.resume()
         
-//        let parameters = [
-//            "username":"admin",
-//            "password":"123",
-//        ]
-//
-//        AF.request("http://localhost:3000/login", method: .post, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default, headers: nil, interceptor: nil).response { (response) in
-//            switch response.result {
-//            case .success(let data):
-//                // lam gi do
-//                do {
-//                    let json = try JSONDecoder.init().decode(Response.self, from: data!)
-//                    // lam gi do voi json
-//                    print(json.message)
-//                } catch {
-//                    print("JSON error")
-//                }
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//            }
-//        }
+        let parameters = [
+            "username":"admin",
+            "password":"123",
+        ]
+
+        AF.request("http://localhost:3000/login", method: .post, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default, headers: nil, interceptor: nil).response { (response) in
+            switch response.result {
+            case .success(let data):
+                // lam gi do
+                do {
+                    let json = try JSONDecoder.init().decode(Response.self, from: data!)
+                    // lam gi do voi json
+                    print(json.message)
+                } catch {
+                    print("JSON error")
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 

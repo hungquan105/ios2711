@@ -58,11 +58,11 @@ app.post('/photos/upload', upload.array('photos', 12), function (req, res, next)
         connectPool();
         pool.query(`insert into "Photo" ("NAME") values ('${img.filename}')`, function (err, result) {
             console.log(result);
-            res.json(result);
         });
         pool.end();
     });
     
+    res.json({result:'OK'});
 });
 
 var cpUpload = upload.fields([{ name: 'avatar', maxCount: 1 }, { name: 'gallery', maxCount: 8 }])

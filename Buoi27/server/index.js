@@ -29,7 +29,7 @@ const storage = multer.diskStorage({
     }
 });
 function fileFilter(req, file, cb) {
-    if (file.mimetype !== 'image/png') {
+    if (file.mimetype !== 'image/jpeg') {
         req.fileValidationError = 'wrong mimeType';
         return cb(null, false);
     }
@@ -62,7 +62,7 @@ app.post('/photos/upload', upload.array('photos', 12), function (req, res, next)
         pool.end();
     });
     
-    res.json({result:'OK'});
+    res.json({result:true, message:'Upload success'});
 });
 
 var cpUpload = upload.fields([{ name: 'avatar', maxCount: 1 }, { name: 'gallery', maxCount: 8 }])

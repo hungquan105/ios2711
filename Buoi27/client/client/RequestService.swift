@@ -39,4 +39,29 @@ struct RequestService {
         }
     }
     
+    func uploadFile<T:Codable>(url:String, dataImages:[Dictionary<String,Any>]?, objectType:T.Type, complete:@escaping CompletionHandleJSON){
+        AF.upload(multipartFormData: { (multipartFormData) in
+            // convert images to data
+            if let dataImages = dataImages {
+                for dict in dataImages {
+                    guard let key:String = dict["key"] as? String, let data:Data = dict["value"] as? Data else {return}
+                    multipartFormData.append(data, withName: key, fileName: "\(Date().timeIntervalSince1970).jpeg", mimeType: "image/jpeg")
+                }
+            }
+        }, to: url).response { (response) in
+            switch response.result {
+            case .success(let data):
+                do {
+                    let json = try JSONDecoder.init().decode(objectType, from: data!)
+                    complete(true,json,nil)
+                } catch {
+                    complete(false,data,nil)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+                complete(false,nil,error)
+            }
+        }
+    }
+    
 }

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imgv: UIImageView!
     
-    let manager = SocketManager(socketURL: URL(string: "http://localhost:3001")!, config: [.log(true), .compress])
+    let manager = SocketManager(socketURL: URL(string: "http://localhost:3002")!, config: [.log(true), .compress])
     var socket:SocketIOClient! = nil
     
     override func viewDidLoad() {
@@ -28,6 +28,12 @@ class ViewController: UIViewController {
 //                self.imgv.frame.origin = CGPoint(x: point[0], y: point[1])
 //            }
 //        }
+        
+        socket.on("server-send") { (data, ack) in
+            guard let point = data[0] as? [CGFloat] else {return}
+            print(point)
+            self.imgv.transform = self.imgv.transform.translatedBy(x: point[0], y: point[1])
+        }
         socket.connect()
     }
 
@@ -41,8 +47,9 @@ class ViewController: UIViewController {
 
     @IBAction func panGesture(_ sender: UIPanGestureRecognizer) {
         let point = sender.translation(in: view)
-        sender.view?.transform = (sender.view?.transform.translatedBy(x: point.x, y: point.y))!
+//        sender.view?.transform = (sender.view?.transform.translatedBy(x: point.x, y: point.y))!
         sender.setTranslation(CGPoint.zero, in: view)
+        socket.emit("move-picture", with: [[point.x, point.y]])
     }
 }
 

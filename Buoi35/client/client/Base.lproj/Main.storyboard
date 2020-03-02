@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="client" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-hT-71J">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iGx-st-dxn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fiD-hT-71J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NW6-DJ-uzk"/>
+                            <constraint firstAttribute="trailing" secondItem="iGx-st-dxn" secondAttribute="trailing" id="Sr7-iQ-LoK"/>
+                            <constraint firstAttribute="bottom" secondItem="fiD-hT-71J" secondAttribute="bottom" id="cEn-tV-P1Z"/>
+                            <constraint firstItem="iGx-st-dxn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cuF-bf-XlS"/>
+                            <constraint firstAttribute="bottom" secondItem="iGx-st-dxn" secondAttribute="bottom" id="d48-B5-jE6"/>
+                            <constraint firstAttribute="trailing" secondItem="fiD-hT-71J" secondAttribute="trailing" id="gnA-tf-Kvv"/>
+                            <constraint firstItem="fiD-hT-71J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hUN-0J-ORc"/>
+                            <constraint firstItem="iGx-st-dxn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s3v-xR-wrZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MainImageView" destination="fiD-hT-71J" id="fuB-CD-Skd"/>
+                        <outlet property="TempImageView" destination="iGx-st-dxn" id="ieF-YG-hsQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="118"/>
+        </scene>
+    </scenes>
+</document>
